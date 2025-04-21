@@ -4,6 +4,7 @@ const MongoClient = require('mongodb').MongoClient;
 let url = `${process.env.MONGO_URL}`;
 
 let dbInstance = null;
+const client = new MongoClient(url);
 const dbName = "giftdb";
 
 async function connectToDatabase() {
